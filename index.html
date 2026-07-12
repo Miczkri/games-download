@@ -2,10 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strefa Gr | Wkrótce więcej</title>
+    
     <meta name="robots" content="noindex, nofollow">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Prosty efekt siatki neonowej w tle */
+        body::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background-image: 
+                linear-gradient(rgba(141, 59, 222, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(141, 59, 222, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            transform: perspective(500px) rotateX(60deg);
+            top: -50%;
+            z-index: 1;
+            animation: grid-move 20s linear infinite;
+        }
+
+        @keyframes grid-move {
+            0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
+            100% { transform: perspective(500px) rotateX(60deg) translateY(40px); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(141, 59, 222, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(141, 59, 222, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00f2fe, #4facfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(0, 242, 254, 0.3);
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #b3b3cc;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: rgba(141, 59, 222, 0.2);
+            border: 1px solid #8d3bde;
+            color: #d6b3ff;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 0 15px rgba(141, 59, 222, 0.3);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hi</h1>
+
+    <div class="container">
+        <div class="badge">System Online</div>
+        <h1>Centrum Bazy Danych</h1>
+        <p>Witaj w naszej zamkniętej strefie gamingowej. Przeglądasz prywatne repozytorium artykułów, analiz oraz poradników dedykowanych najpopularniejszym tytułom.</p>
+        <p style="font-size: 0.9rem; color: #666680; margin-bottom: 0;">Dostęp do bazy wyłącznie przez bezpośrednie odnośniki URL.</p>
+    </div>
+
 </body>
 </html>
